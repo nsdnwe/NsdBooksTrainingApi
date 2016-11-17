@@ -13,7 +13,7 @@ namespace NsdBooksTrainingApi.App_Start {
         // GET: api/reset
         public string GetReset() {
             db.Database.ExecuteSqlCommand("DELETE FROM Books");
-            return "Books table cleared.";
+            return "Books table cleared";
         }
 
     }
