@@ -16,12 +16,6 @@ namespace NsdBooksTrainingApi.Controllers
     public class BooksController : ApiController {
         private DB db = new DB();
 
-        // GET: api/Reset
-        public string Reset() {
-            db.Database.ExecuteSqlCommand("DELETE FROM Books");
-            return "Books table cleared.";
-        }
-
         // GET: api/Books
         public IQueryable<Book> GetBooks() {
             return db.Books;
